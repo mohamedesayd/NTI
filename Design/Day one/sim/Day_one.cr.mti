@@ -1,0 +1,43 @@
+{/home/eldo/work/NTI/Design/Day one/FA_D.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day one/FA_D.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module FA_D
+
+Top level modules:
+	FA_D
+
+} {} {}} {/home/eldo/work/NTI/Design/Day one/HA_S.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day one/HA_S.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module HA_S
+
+Top level modules:
+	HA_S
+
+} {} {}} {/home/eldo/work/NTI/Design/Day one/FA_TB.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day one/FA_TB.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module FA_TB
+
+Top level modules:
+	FA_TB
+
+} {} {}} {/home/eldo/work/NTI/Design/Day one/FA_B.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day one/FA_B.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module FA_B
+
+Top level modules:
+	FA_B
+
+} {} {}} {/home/eldo/work/NTI/Design/Day one/FA_S.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day one/FA_S.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module FA_S
+
+Top level modules:
+	FA_S
+
+} {} {}} {/home/eldo/work/NTI/Design/Day one/FA_G.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day one/FA_G.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module FA_G
+
+Top level modules:
+	FA_G
+
+} {} {}}

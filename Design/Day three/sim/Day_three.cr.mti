@@ -1,0 +1,113 @@
+{/home/eldo/work/NTI/Design/Day three/and_using_nand.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/and_using_nand.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module and_using_nand
+
+Top level modules:
+	and_using_nand
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/dec_2x4.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/dec_2x4.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module dec_2x4
+
+Top level modules:
+	dec_2x4
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/HA_using_dec.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/HA_using_dec.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module HA_using_dec
+
+Top level modules:
+	HA_using_dec
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/or_using_nand.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/or_using_nand.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module or_using_nand
+
+Top level modules:
+	or_using_nand
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/dec_3x8.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/dec_3x8.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module dec_3x8
+
+Top level modules:
+	dec_3x8
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/xor_using_mux.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/xor_using_mux.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module xor_using_mux
+
+Top level modules:
+	xor_using_mux
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/nand_using_mux.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/nand_using_mux.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module nand_using_mux
+
+Top level modules:
+	nand_using_mux
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/buf_using_xor.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/buf_using_xor.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module buf_using_xor
+
+Top level modules:
+	buf_using_xor
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/mux_2x1.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/mux_2x1.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module mux_2x1
+
+Top level modules:
+	mux_2x1
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/FA_using_mux.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/FA_using_mux.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module FA_using_mux
+
+Top level modules:
+	FA_using_mux
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/and_using_nor.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/and_using_nor.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module and_using_nor
+
+Top level modules:
+	and_using_nor
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/global_tb.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/global_tb.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module global_tb
+
+Top level modules:
+	global_tb
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/mux_4x1.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/mux_4x1.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module mux_4x1
+
+Top level modules:
+	mux_4x1
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/or_using_mux.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/or_using_mux.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module or_using_mux
+
+Top level modules:
+	or_using_mux
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/FA_using_dec.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/FA_using_dec.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module FA_using_dec
+
+Top level modules:
+	FA_using_dec
+
+} {} {}} {/home/eldo/work/NTI/Design/Day three/HA_using_mux.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day three/HA_using_mux.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module HA_using_mux
+
+Top level modules:
+	HA_using_mux
+
+} {} {}}

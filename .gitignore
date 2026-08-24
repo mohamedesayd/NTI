@@ -1,0 +1,41 @@
+# Questa / ModelSim
+work/
+transcript
+*.wlf
+*.log
+
+# Verilator
+obj_dir/
+*.vcd
+
+# Vivado
+.vivado/
+*.jou
+*.str
+*.log
+
+# Quartus
+db/
+incremental_db/
+*.rpt
+*.summary
+*.qws
+
+# Simulation
+*.vcd
+*.fst
+*.wlf
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Python
+__pycache__/
+*.pyc
+
+# Build/generated files
+build/
+out/

@@ -1,0 +1,8 @@
+{/home/eldo/work/NTI/Design/Day two/RTL&TB/Parameterized_Enc/P_Enc.v} {1 {vlog -work work -vopt -stats=none {/home/eldo/work/NTI/Design/Day two/RTL&TB/Parameterized_Enc/P_Enc.v}
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+-- Compiling module P_Enc
+
+Top level modules:
+	P_Enc
+
+} {} {}}
