@@ -1,5 +1,4 @@
 module advertiser(
-    input clk, rst_n, 
     input [2:0] state,
     output reg [6:0] sevseg0, sevseg1, sevseg2, sevseg3,sevseg4,sevseg5
 );
@@ -22,25 +21,25 @@ module advertiser(
 
             end
             level1:begin
-                sevseg0 = 7'b1111111;
-                sevseg1 = 7'b1111001; 
-                sevseg2 = 7'b1110001; 
+                sevseg0 = 7'b1111001;
+                sevseg1 = 7'b1110001; 
+                sevseg2 = 7'b0110000; 
                 sevseg3 = 7'b1000001;
                 sevseg4 = 7'b0110000;
                 sevseg5 = 7'b1110001;
             end
             levle2:begin
-                sevseg0 = 7'b1111111;
-                sevseg1 = 7'b0010010; 
-                sevseg2 = 7'b1110001; 
+                sevseg0 = 7'b0010010;
+                sevseg1 = 7'b1110001; 
+                sevseg2 = 7'b0110000; 
                 sevseg3 = 7'b1000001;
                 sevseg4 = 7'b0110000;
                 sevseg5 = 7'b1110001;
             end
             level3:begin
-                sevseg0 = 7'b1111111;
-                sevseg1 = 7'b0000110; 
-                sevseg2 = 7'b1110001; 
+                sevseg0 = 7'b0000110;
+                sevseg1 = 7'b1110001; 
+                sevseg2 = 7'b0110000; 
                 sevseg3 = 7'b1000001;
                 sevseg4 = 7'b0110000;
                 sevseg5 = 7'b1110001;

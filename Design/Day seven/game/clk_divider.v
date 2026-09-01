@@ -1,5 +1,5 @@
 module clk_divider #(
-    parameter CLK_REF_FREQ = 5_000_000
+    parameter CLK_REF_FREQ = 50_000_000
 )(
     input clk_ref, rst_n,
     input [2:0] speed,

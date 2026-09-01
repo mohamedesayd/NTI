@@ -4,7 +4,7 @@ module lfsr(
 );
     always @(posedge clk, negedge rst_n) begin
         if (~rst_n)
-            out <= 0;
+            out <= 10'b0000000001;
         else if (hold)
             out <= out;
         else

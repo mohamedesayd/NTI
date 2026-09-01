@@ -4,17 +4,19 @@ module sm(
     output reg [2:0] speed,
     output reg active
 );
+    reg upgraded;
     parameter idle  =3'b000,
               level1=3'b001,
-              levle2=3'b010,
+              level2=3'b010,
               level3=3'b011,
               lose  =3'b100,
               win   =3'b101;
 
     reg [2:0]current_state, next_state;
     always @(posedge clk, negedge rst_n) begin
-        if (~rst_n)
+        if (~rst_n) begin 
             current_state <= idle;
+        end
         else
             current_state <= next_state;
     end
@@ -28,23 +30,23 @@ module sm(
                     next_state <= idle;
             end
             level1:begin
-                if (boss && hold)
-                    next_state <= levle2;
+                if (~upgraded && boss && hold)
+                    next_state <= level2;
                 else if (loser && hold)
                     next_state <= lose;
                 else
                     next_state <= level1;
             end
-            levle2:begin
-                if (boss && hold)
+            level2:begin
+                if (~upgraded && boss && hold)
                     next_state <= level3;
                 else if (loser && hold)
                     next_state <= lose;
                 else
-                    next_state <= levle2;
+                    next_state <= level2;
             end
             level3:begin
-                if (boss && hold)
+                if (~upgraded && boss && hold)
                     next_state <= win;
                 else if (loser && hold)
                     next_state <= lose;
@@ -74,11 +76,18 @@ module sm(
 
         if (current_state == level3)
             speed = 3'd4;
-        else if (current_state == levle2)
+        else if (current_state == level2)
             speed = 3'd2;
         else    
             speed = 3'd1;
 
         state = current_state;
+
+        if (((current_state == level1)||
+             (current_state == level2)||
+             (current_state == level3))&& boss)
+            upgraded = 1;
+        else 
+            upgraded = 0;
     end
 endmodule
