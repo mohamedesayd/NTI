@@ -1,0 +1,396 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : UART_Tx
+Version: O-2018.06-SP1
+Date   : Wed Sep  2 13:03:36 2026
+****************************************
+
+Operating Conditions: tt0p78v25c   Library: saed32rvt_tt0p78v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: Frame/out_frame_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  frame              ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst (in)                                                0.00       2.00 r
+  Frame/rst (frame)                                       0.00       2.00 r
+  Frame/U7/Y (INVX1_RVT)                                  0.06       2.06 f
+  Frame/U8/Y (NAND2X0_RVT)                                0.09       2.15 r
+  Frame/U6/Y (AND2X1_RVT)                                 0.13       2.28 r
+  Frame/U17/Y (AO22X1_RVT)                                0.12       2.39 r
+  Frame/out_frame_reg[9]/D (DFFARX1_RVT)                  0.01       2.41 r
+  data arrival time                                                  2.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  Frame/out_frame_reg[9]/CLK (DFFARX1_RVT)                0.00      19.50 r
+  library setup time                                     -0.07      19.43
+  data required time                                                19.43
+  --------------------------------------------------------------------------
+  data required time                                                19.43
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.03
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: Frame/out_frame_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  frame              ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst (in)                                                0.00       2.00 r
+  Frame/rst (frame)                                       0.00       2.00 r
+  Frame/U7/Y (INVX1_RVT)                                  0.06       2.06 f
+  Frame/U8/Y (NAND2X0_RVT)                                0.09       2.15 r
+  Frame/U6/Y (AND2X1_RVT)                                 0.13       2.28 r
+  Frame/U16/Y (AO22X1_RVT)                                0.12       2.39 r
+  Frame/out_frame_reg[8]/D (DFFARX1_RVT)                  0.01       2.41 r
+  data arrival time                                                  2.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  Frame/out_frame_reg[8]/CLK (DFFARX1_RVT)                0.00      19.50 r
+  library setup time                                     -0.07      19.43
+  data required time                                                19.43
+  --------------------------------------------------------------------------
+  data required time                                                19.43
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.03
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: Frame/out_frame_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  frame              ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst (in)                                                0.00       2.00 r
+  Frame/rst (frame)                                       0.00       2.00 r
+  Frame/U7/Y (INVX1_RVT)                                  0.06       2.06 f
+  Frame/U8/Y (NAND2X0_RVT)                                0.09       2.15 r
+  Frame/U6/Y (AND2X1_RVT)                                 0.13       2.28 r
+  Frame/U15/Y (AO22X1_RVT)                                0.12       2.39 r
+  Frame/out_frame_reg[7]/D (DFFARX1_RVT)                  0.01       2.41 r
+  data arrival time                                                  2.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  Frame/out_frame_reg[7]/CLK (DFFARX1_RVT)                0.00      19.50 r
+  library setup time                                     -0.07      19.43
+  data required time                                                19.43
+  --------------------------------------------------------------------------
+  data required time                                                19.43
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.03
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: Frame/out_frame_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  frame              ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst (in)                                                0.00       2.00 r
+  Frame/rst (frame)                                       0.00       2.00 r
+  Frame/U7/Y (INVX1_RVT)                                  0.06       2.06 f
+  Frame/U8/Y (NAND2X0_RVT)                                0.09       2.15 r
+  Frame/U6/Y (AND2X1_RVT)                                 0.13       2.28 r
+  Frame/U14/Y (AO22X1_RVT)                                0.12       2.39 r
+  Frame/out_frame_reg[6]/D (DFFARX1_RVT)                  0.01       2.41 r
+  data arrival time                                                  2.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  Frame/out_frame_reg[6]/CLK (DFFARX1_RVT)                0.00      19.50 r
+  library setup time                                     -0.07      19.43
+  data required time                                                19.43
+  --------------------------------------------------------------------------
+  data required time                                                19.43
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.03
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: Frame/out_frame_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  frame              ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst (in)                                                0.00       2.00 r
+  Frame/rst (frame)                                       0.00       2.00 r
+  Frame/U7/Y (INVX1_RVT)                                  0.06       2.06 f
+  Frame/U8/Y (NAND2X0_RVT)                                0.09       2.15 r
+  Frame/U6/Y (AND2X1_RVT)                                 0.13       2.28 r
+  Frame/U13/Y (AO22X1_RVT)                                0.12       2.39 r
+  Frame/out_frame_reg[5]/D (DFFARX1_RVT)                  0.01       2.41 r
+  data arrival time                                                  2.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  Frame/out_frame_reg[5]/CLK (DFFARX1_RVT)                0.00      19.50 r
+  library setup time                                     -0.07      19.43
+  data required time                                                19.43
+  --------------------------------------------------------------------------
+  data required time                                                19.43
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.03
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: Frame/out_frame_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  frame              ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst (in)                                                0.00       2.00 r
+  Frame/rst (frame)                                       0.00       2.00 r
+  Frame/U7/Y (INVX1_RVT)                                  0.06       2.06 f
+  Frame/U8/Y (NAND2X0_RVT)                                0.09       2.15 r
+  Frame/U6/Y (AND2X1_RVT)                                 0.13       2.28 r
+  Frame/U12/Y (AO22X1_RVT)                                0.12       2.39 r
+  Frame/out_frame_reg[4]/D (DFFARX1_RVT)                  0.01       2.41 r
+  data arrival time                                                  2.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  Frame/out_frame_reg[4]/CLK (DFFARX1_RVT)                0.00      19.50 r
+  library setup time                                     -0.07      19.43
+  data required time                                                19.43
+  --------------------------------------------------------------------------
+  data required time                                                19.43
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.03
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: Frame/out_frame_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  frame              ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst (in)                                                0.00       2.00 r
+  Frame/rst (frame)                                       0.00       2.00 r
+  Frame/U7/Y (INVX1_RVT)                                  0.06       2.06 f
+  Frame/U8/Y (NAND2X0_RVT)                                0.09       2.15 r
+  Frame/U6/Y (AND2X1_RVT)                                 0.13       2.28 r
+  Frame/U11/Y (AO22X1_RVT)                                0.12       2.39 r
+  Frame/out_frame_reg[3]/D (DFFARX1_RVT)                  0.01       2.41 r
+  data arrival time                                                  2.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  Frame/out_frame_reg[3]/CLK (DFFARX1_RVT)                0.00      19.50 r
+  library setup time                                     -0.07      19.43
+  data required time                                                19.43
+  --------------------------------------------------------------------------
+  data required time                                                19.43
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.03
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: Frame/out_frame_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  frame              ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst (in)                                                0.00       2.00 r
+  Frame/rst (frame)                                       0.00       2.00 r
+  Frame/U7/Y (INVX1_RVT)                                  0.06       2.06 f
+  Frame/U8/Y (NAND2X0_RVT)                                0.09       2.15 r
+  Frame/U6/Y (AND2X1_RVT)                                 0.13       2.28 r
+  Frame/U10/Y (AO22X1_RVT)                                0.12       2.39 r
+  Frame/out_frame_reg[2]/D (DFFARX1_RVT)                  0.01       2.41 r
+  data arrival time                                                  2.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  Frame/out_frame_reg[2]/CLK (DFFARX1_RVT)                0.00      19.50 r
+  library setup time                                     -0.07      19.43
+  data required time                                                19.43
+  --------------------------------------------------------------------------
+  data required time                                                19.43
+  data arrival time                                                 -2.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.03
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: Bit_select/bit_select_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  bit_select         ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  rst (in)                                                0.00       2.00 f
+  Bit_select/rst (bit_select)                             0.00       2.00 f
+  Bit_select/U11/Y (AO21X1_RVT)                           0.12       2.12 f
+  Bit_select/U3/Y (INVX1_RVT)                             0.07       2.20 r
+  Bit_select/U4/Y (AO21X1_RVT)                            0.08       2.28 r
+  Bit_select/U16/Y (AO21X1_RVT)                           0.10       2.38 r
+  Bit_select/bit_select_reg[2]/D (DFFARX1_RVT)            0.01       2.39 r
+  data arrival time                                                  2.39
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  Bit_select/bit_select_reg[2]/CLK (DFFARX1_RVT)          0.00      19.50 r
+  library setup time                                     -0.07      19.43
+  data required time                                                19.43
+  --------------------------------------------------------------------------
+  data required time                                                19.43
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.04
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: Bit_select/bit_select_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  bit_select         ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  rst (in)                                                0.00       2.00 f
+  Bit_select/rst (bit_select)                             0.00       2.00 f
+  Bit_select/U11/Y (AO21X1_RVT)                           0.12       2.12 f
+  Bit_select/U3/Y (INVX1_RVT)                             0.07       2.20 r
+  Bit_select/U4/Y (AO21X1_RVT)                            0.08       2.28 r
+  Bit_select/U17/Y (AO21X1_RVT)                           0.10       2.38 r
+  Bit_select/bit_select_reg[3]/D (DFFARX1_RVT)            0.01       2.39 r
+  data arrival time                                                  2.39
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  Bit_select/bit_select_reg[3]/CLK (DFFARX1_RVT)          0.00      19.50 r
+  library setup time                                     -0.07      19.43
+  data required time                                                19.43
+  --------------------------------------------------------------------------
+  data required time                                                19.43
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.04
+
+
+1
