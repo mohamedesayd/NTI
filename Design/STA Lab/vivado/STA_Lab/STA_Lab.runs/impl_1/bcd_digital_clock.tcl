@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/impl_1/bcd_digital_clock.tcl"
+  variable script "/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/impl_1/bcd_digital_clock.tcl"
   variable category "vivado_impl"
 }
 
@@ -104,20 +104,36 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param power.BramSDPPropagationFix 1
-  set_param general.usePosixSpawnForFork 1
   set_param chipscope.maxJobs 4
-  set_param physdb.placeDBImplUsesPlaceStorage 0
-  set_param power.enableUnconnectedCarry8PinPower 1
-  set_param power.enableCarry8RouteBelPower 1
-  set_param power.enableLutRouteBelPower 1
+  set_param general.usePosixSpawnForFork 1
   set_param runs.launchOptions { -jobs 16  }
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint {F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/impl_1/bcd_digital_clock.dcp}
-  set_property webtalk.parent_dir {F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.cache/wt} [current_project]
-  set_property parent.project_path {F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.xpr} [current_project]
-  set_property ip_output_repo {{F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.cache/ip}} [current_project]
+OPTRACE "create in-memory project" START { }
+  create_project -in_memory -part xazu1eg-sbva484-1-i
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+OPTRACE "create in-memory project" END { }
+OPTRACE "set parameters" START { }
+  set_property webtalk.parent_dir {/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.cache/wt} [current_project]
+  set_property parent.project_path {/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.xpr} [current_project]
+  set_property ip_output_repo {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+OPTRACE "set parameters" END { }
+OPTRACE "add files" START { }
+  add_files -quiet {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/synth_1/bcd_digital_clock.dcp}}
+OPTRACE "read constraints: implementation" START { }
+  read_xdc {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_LAB3.xdc}}
+  read_xdc {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab.xdc}}
+  read_xdc {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab2.xdc}}
+  read_xdc {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/Lab.xdc}}
+OPTRACE "read constraints: implementation" END { }
+OPTRACE "read constraints: implementation_pre" START { }
+OPTRACE "read constraints: implementation_pre" END { }
+OPTRACE "add files" END { }
+OPTRACE "link_design" START { }
+  link_design -top bcd_digital_clock -part xazu1eg-sbva484-1-i 
+OPTRACE "link_design" END { }
+OPTRACE "gray box cells" START { }
+OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }
@@ -141,7 +157,7 @@ set rc [catch {
 OPTRACE "read constraints: opt_design" START { }
 OPTRACE "read constraints: opt_design" END { }
 OPTRACE "opt_design" START { }
-  opt_design 
+  opt_design -directive Explore
 OPTRACE "opt_design" END { }
 OPTRACE "read constraints: opt_design_post" START { }
 OPTRACE "read constraints: opt_design_post" END { }
@@ -178,7 +194,7 @@ OPTRACE "implement_debug_core" END { }
   } 
 OPTRACE "place_design" START { }
   set_param project.isImplRun true
-  place_design -directive ExtraTimingOpt
+  place_design -directive ExtraNetDelay_low
   set_param project.isImplRun false
 OPTRACE "place_design" END { }
 OPTRACE "read constraints: place_design_post" START { }
@@ -210,7 +226,7 @@ set rc [catch {
 OPTRACE "read constraints: phys_opt_design" START { }
 OPTRACE "read constraints: phys_opt_design" END { }
 OPTRACE "phys_opt_design" START { }
-  phys_opt_design -directive Explore
+  phys_opt_design -directive AggressiveExplore
 OPTRACE "phys_opt_design" END { }
 OPTRACE "read constraints: phys_opt_design_post" START { }
 OPTRACE "read constraints: phys_opt_design_post" END { }

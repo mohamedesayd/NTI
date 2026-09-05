@@ -1,30 +1,29 @@
 #-----------------------------------------------------------
 # Vivado v2025.2.1 (64-bit)
-# SW Build 6403652 on Thu Mar 19 19:48:24 GMT 2026
+# SW Build 6403652 on Thu Mar 19 13:47:00 MDT 2026
 # IP Build 6403511 on Thu Mar 19 12:41:45 MDT 2026
 # SharedData Build 6403650 on Thu Mar 19 14:02:13 MDT 2026
-# Start of session at: Sun Aug 30 03:39:09 2026
-# Process ID         : 8076
-# Current directory  : F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/synth_1
-# Command line       : vivado.exe -log bcd_digital_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bcd_digital_clock.tcl
-# Log file           : F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/synth_1/bcd_digital_clock.vds
-# Journal file       : F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/synth_1\vivado.jou
-# Running On         : Mohamed
-# Platform           : Windows Server 2016 or Windows 10
-# Operating System   : 26200
+# Start of session at: Wed Sep  2 10:04:36 2026
+# Process ID         : 269568
+# Current directory  : /home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/synth_1
+# Command line       : vivado -log bcd_digital_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bcd_digital_clock.tcl
+# Log file           : /home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/synth_1/bcd_digital_clock.vds
+# Journal file       : /home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/synth_1/vivado.jou
+# Running On         : eldo
+# Platform           : NobaraLinux
+# Operating System   : Nobara Linux 44 (GNOME Edition)
 # Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
-# CPU Frequency      : 2304 MHz
+# CPU Frequency      : 2156.594 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
-# Host memory        : 16948 MB
-# Swap memory        : 2818 MB
-# Total Virtual      : 19767 MB
-# Available Virtual  : 7246 MB
+# Host memory        : 16523 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 16523 MB
+# Available Virtual  : 7615 MB
 #-----------------------------------------------------------
 source bcd_digital_clock.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 556.285 ; gain = 225.316
-Command: read_checkpoint -auto_incremental -incremental {F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/utils_1/imports/synth_1/bcd_digital_clock.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/utils_1/imports/synth_1/bcd_digital_clock.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental {/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/utils_1/imports/synth_1/bcd_digital_clock.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/utils_1/imports/synth_1/bcd_digital_clock.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top bcd_digital_clock -part xazu1eg-sbva484-1-i
 Starting synth_design
@@ -33,59 +32,61 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xazu1eg
 INFO: [Device 21-403] Loading part xazu1eg-sbva484-1-i
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14416
+INFO: [Synth 8-7075] Helper process launched with PID 269635
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1404.492 ; gain = 532.359
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2545.918 ; gain = 472.906 ; free physical = 2436 ; free virtual = 5980
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'bcd_digital_clock' [F:/NTI/Design/STA Lab/bcd_digital_clock.v:1]
-INFO: [Synth 8-6157] synthesizing module 'digital_clock' [F:/NTI/Design/STA Lab/digital_clock.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'digital_clock' (0#1) [F:/NTI/Design/STA Lab/digital_clock.v:1]
-INFO: [Synth 8-6157] synthesizing module 'bin_to_sev_seg_dec' [F:/NTI/Design/STA Lab/bin_to_sev_seg_dec.v:1]
-INFO: [Synth 8-6157] synthesizing module 'sev_seg_hex_dec' [F:/NTI/Design/STA Lab/sev_seg_hex_dec.v:1]
-INFO: [Synth 8-226] default block is never used [F:/NTI/Design/STA Lab/sev_seg_hex_dec.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'sev_seg_hex_dec' (0#1) [F:/NTI/Design/STA Lab/sev_seg_hex_dec.v:1]
-INFO: [Synth 8-6157] synthesizing module 'bin_to_BCD_dec' [F:/NTI/Design/STA Lab/bin_to_BCD_dec.v:1]
-INFO: [Synth 8-6157] synthesizing module 'conditional_adder' [F:/NTI/Design/STA Lab/conditional_adder.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'conditional_adder' (0#1) [F:/NTI/Design/STA Lab/conditional_adder.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'bin_to_BCD_dec' (0#1) [F:/NTI/Design/STA Lab/bin_to_BCD_dec.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'bin_to_sev_seg_dec' (0#1) [F:/NTI/Design/STA Lab/bin_to_sev_seg_dec.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'bcd_digital_clock' (0#1) [F:/NTI/Design/STA Lab/bcd_digital_clock.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bcd_digital_clock' [/home/eldo/work/NTI/Design/STA Lab/bcd_digital_clock.v:1]
+INFO: [Synth 8-6157] synthesizing module 'digital_clock' [/home/eldo/work/NTI/Design/STA Lab/digital_clock.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'digital_clock' (0#1) [/home/eldo/work/NTI/Design/STA Lab/digital_clock.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_sev_seg_dec' [/home/eldo/work/NTI/Design/STA Lab/bin_to_sev_seg_dec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sev_seg_hex_dec' [/home/eldo/work/NTI/Design/STA Lab/sev_seg_hex_dec.v:1]
+INFO: [Synth 8-226] default block is never used [/home/eldo/work/NTI/Design/STA Lab/sev_seg_hex_dec.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sev_seg_hex_dec' (0#1) [/home/eldo/work/NTI/Design/STA Lab/sev_seg_hex_dec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_BCD_dec' [/home/eldo/work/NTI/Design/STA Lab/bin_to_BCD_dec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'conditional_adder' [/home/eldo/work/NTI/Design/STA Lab/conditional_adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'conditional_adder' (0#1) [/home/eldo/work/NTI/Design/STA Lab/conditional_adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_BCD_dec' (0#1) [/home/eldo/work/NTI/Design/STA Lab/bin_to_BCD_dec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_sev_seg_dec' (0#1) [/home/eldo/work/NTI/Design/STA Lab/bin_to_sev_seg_dec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_digital_clock' (0#1) [/home/eldo/work/NTI/Design/STA Lab/bcd_digital_clock.v:1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1522.211 ; gain = 650.078
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2631.887 ; gain = 558.875 ; free physical = 2310 ; free virtual = 5864
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1522.211 ; gain = 650.078
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2643.762 ; gain = 570.750 ; free physical = 2298 ; free virtual = 5856
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1522.211 ; gain = 650.078
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2643.762 ; gain = 570.750 ; free physical = 2298 ; free virtual = 5856
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1522.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2643.762 ; gain = 0.000 ; free physical = 2298 ; free virtual = 5856
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_LAB3.xdc]
-Finished Parsing XDC File [F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_LAB3.xdc]
-Parsing XDC File [F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab.xdc]
-Finished Parsing XDC File [F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab.xdc]
-Parsing XDC File [F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab2.xdc]
-Finished Parsing XDC File [F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab2.xdc]
+Parsing XDC File [/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_LAB3.xdc]
+Finished Parsing XDC File [/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_LAB3.xdc]
+Parsing XDC File [/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab.xdc]
+Finished Parsing XDC File [/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab.xdc]
+Parsing XDC File [/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab2.xdc]
+Finished Parsing XDC File [/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab2.xdc]
+Parsing XDC File [/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/Lab.xdc]
+Finished Parsing XDC File [/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/Lab.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1576.242 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2765.758 ; gain = 0.000 ; free physical = 2305 ; free virtual = 5844
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1576.242 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2765.793 ; gain = 0.000 ; free physical = 2305 ; free virtual = 5844
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1576.242 ; gain = 704.109
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2765.793 ; gain = 692.781 ; free physical = 2293 ; free virtual = 5832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -93,16 +94,16 @@ Start Loading Part and Timing Information
 Loading part: xazu1eg-sbva484-1-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1576.242 ; gain = 704.109
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2773.762 ; gain = 700.750 ; free physical = 2293 ; free virtual = 5832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1576.242 ; gain = 704.109
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2773.762 ; gain = 700.750 ; free physical = 2293 ; free virtual = 5832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1576.242 ; gain = 704.109
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2773.762 ; gain = 700.750 ; free physical = 2291 ; free virtual = 5831
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -132,25 +133,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1576.242 ; gain = 704.109
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2773.762 ; gain = 700.750 ; free physical = 2268 ; free virtual = 5824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1848.254 ; gain = 976.121
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3020.191 ; gain = 947.180 ; free physical = 2122 ; free virtual = 5628
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1887.965 ; gain = 1015.832
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3057.238 ; gain = 984.227 ; free physical = 2105 ; free virtual = 5603
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1887.965 ; gain = 1015.832
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3057.238 ; gain = 984.227 ; free physical = 2104 ; free virtual = 5603
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -168,37 +169,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2109.828 ; gain = 1237.695
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3219.051 ; gain = 1146.039 ; free physical = 1937 ; free virtual = 5437
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2109.828 ; gain = 1237.695
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3219.051 ; gain = 1146.039 ; free physical = 1937 ; free virtual = 5437
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2109.828 ; gain = 1237.695
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3219.051 ; gain = 1146.039 ; free physical = 1937 ; free virtual = 5437
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2109.828 ; gain = 1237.695
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3219.051 ; gain = 1146.039 ; free physical = 1937 ; free virtual = 5437
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2109.828 ; gain = 1237.695
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3219.051 ; gain = 1146.039 ; free physical = 1938 ; free virtual = 5438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2109.828 ; gain = 1237.695
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3219.051 ; gain = 1146.039 ; free physical = 1938 ; free virtual = 5438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -226,18 +227,18 @@ Report Cell Usage:
 |10    |OBUF |    42|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2109.828 ; gain = 1237.695
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3219.051 ; gain = 1146.039 ; free physical = 1938 ; free virtual = 5438
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2109.828 ; gain = 1183.664
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2109.828 ; gain = 1237.695
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3219.051 ; gain = 1024.008 ; free physical = 1950 ; free virtual = 5450
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3219.051 ; gain = 1146.039 ; free physical = 1950 ; free virtual = 5450
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2109.828 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3219.051 ; gain = 0.000 ; free physical = 2128 ; free virtual = 5630
 INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2116.395 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3219.051 ; gain = 0.000 ; free physical = 2125 ; free virtual = 5628
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   BUFG => BUFGCE: 1 instance 
@@ -247,8 +248,10 @@ Synth Design complete | Checksum: 440dbcf6
 INFO: [Common 17-83] Releasing license: Synthesis
 34 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 2116.395 ; gain = 1553.738
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2116.395 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/synth_1/bcd_digital_clock.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 3219.051 ; gain = 1404.703 ; free physical = 2123 ; free virtual = 5628
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2244.710; main = 2244.710; forked = 343.051
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4434.027; main = 3199.910; forked = 1668.266
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3223.918 ; gain = 0.000 ; free physical = 2123 ; free virtual = 5628
+INFO: [Common 17-1381] The checkpoint '/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/synth_1/bcd_digital_clock.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file bcd_digital_clock_utilization_synth.rpt -pb bcd_digital_clock_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Aug 30 03:40:05 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  2 10:05:02 2026...

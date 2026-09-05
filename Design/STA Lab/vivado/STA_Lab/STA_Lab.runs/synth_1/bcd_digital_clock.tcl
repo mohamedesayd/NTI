@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/synth_1/bcd_digital_clock.tcl"
+  variable script "/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.runs/synth_1/bcd_digital_clock.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,28 +56,33 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param power.BramSDPPropagationFix 1
 set_param general.usePosixSpawnForFork 1
+set_param physdb.placeDBImplUsesPlaceStorage 0
+set_param power.enableUnconnectedCarry8PinPower 1
+set_param power.enableCarry8RouteBelPower 1
+set_param power.enableLutRouteBelPower 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xazu1eg-sbva484-1-i
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.cache/wt} [current_project]
-set_property parent.project_path {F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.xpr} [current_project]
+set_property webtalk.parent_dir {/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.cache/wt} [current_project]
+set_property parent.project_path {/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {f:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.cache/ip} [current_project]
+set_property ip_output_repo {/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  {F:/NTI/Design/STA Lab/bin_to_BCD_dec.v}
-  {F:/NTI/Design/STA Lab/bin_to_sev_seg_dec.v}
-  {F:/NTI/Design/STA Lab/conditional_adder.v}
-  {F:/NTI/Design/STA Lab/digital_clock.v}
-  {F:/NTI/Design/STA Lab/sev_seg_hex_dec.v}
-  {F:/NTI/Design/STA Lab/bcd_digital_clock.v}
+  {/home/eldo/work/NTI/Design/STA Lab/bin_to_BCD_dec.v}
+  {/home/eldo/work/NTI/Design/STA Lab/bin_to_sev_seg_dec.v}
+  {/home/eldo/work/NTI/Design/STA Lab/conditional_adder.v}
+  {/home/eldo/work/NTI/Design/STA Lab/digital_clock.v}
+  {/home/eldo/work/NTI/Design/STA Lab/sev_seg_hex_dec.v}
+  {/home/eldo/work/NTI/Design/STA Lab/bcd_digital_clock.v}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -88,18 +93,21 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_LAB3.xdc}}
-set_property used_in_implementation false [get_files {{F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_LAB3.xdc}}]
+read_xdc {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_LAB3.xdc}}
+set_property used_in_implementation false [get_files {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_LAB3.xdc}}]
 
-read_xdc {{F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab.xdc}}
-set_property used_in_implementation false [get_files {{F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab.xdc}}]
+read_xdc {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab.xdc}}
+set_property used_in_implementation false [get_files {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab.xdc}}]
 
-read_xdc {{F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab2.xdc}}
-set_property used_in_implementation false [get_files {{F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab2.xdc}}]
+read_xdc {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab2.xdc}}
+set_property used_in_implementation false [get_files {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/STA_Lab2.xdc}}]
+
+read_xdc {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/Lab.xdc}}
+set_property used_in_implementation false [get_files {{/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/constrs_1/new/Lab.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental {F:/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/utils_1/imports/synth_1/bcd_digital_clock.dcp}
+read_checkpoint -auto_incremental -incremental {/home/eldo/work/NTI/Design/STA Lab/vivado/STA_Lab/STA_Lab.srcs/utils_1/imports/synth_1/bcd_digital_clock.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

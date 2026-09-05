@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xazu1eg-sbva484-1-i" LaunchTime="1788050347" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/bcd_digital_clock.dcp">
-  <File Type="PA-TCL" Name="bcd_digital_clock.tcl"/>
-  <File Type="REPORTS-TCL" Name="bcd_digital_clock_reports.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xazu1eg-sbva484-1-i" LaunchTime="1788332673" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/bcd_digital_clock.dcp">
+  <File Type="RDS-DCP" Name="bcd_digital_clock.dcp"/>
   <File Type="RDS-RDS" Name="bcd_digital_clock.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="bcd_digital_clock_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="bcd_digital_clock_reports.tcl"/>
+  <File Type="PA-TCL" Name="bcd_digital_clock.tcl"/>
   <File Type="RDS-UTIL" Name="bcd_digital_clock_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="bcd_digital_clock_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="bcd_digital_clock.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="bcd_digital_clock_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="bcd_digital_clock_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../../bin_to_BCD_dec.v">
@@ -74,6 +71,12 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/constrs_1/new/STA_Lab2.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/Lab.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

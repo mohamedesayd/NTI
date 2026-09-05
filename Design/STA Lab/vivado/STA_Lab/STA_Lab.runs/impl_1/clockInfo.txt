@@ -1,8 +1,8 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.2.1
-| Date         : Sun Aug 30 04:17:32 2026
-| Host         : Mohamed
-| Design       : checkpoint_bcd_digital_clock
+| Date         : Wed Sep  2 10:35:05 2026
+| Host         : eldo
+| Design       : design_1
 | Device       : xazu1eg-sbva484-1-I-
 -------------------------------------
 
