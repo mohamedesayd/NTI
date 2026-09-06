@@ -4,6 +4,17 @@
 
 
 # ======================================================
+# Clocks
+# ======================================================
+
+set_location_assignment PIN_AF14  -to       ;#CLOCK_50
+set_location_assignment PIN_AA16  -to       ;#CLOCK2_50
+set_location_assignment PIN_Y26   -to       ;#CLOCK3_50
+set_location_assignment PIN_K14   -to       ;#CLOCK4_50
+set_location_assignment PIN_D25   -to       ;#HPS_CLOCK1_25
+set_location_assignment PIN_F25   -to       ;#HPS_CLOCK2_25
+
+# ======================================================
 # Switches pin assignments
 # ======================================================
 # Format: set_location_assignment PIN_<pin> -to your_signal_name[i]
@@ -126,6 +137,40 @@ set_location_assignment PIN_AF19 -to HEX5[5]
 set_location_assignment PIN_AB21 -to HEX5[6]
 #===========================================
 #===========================================
+
+#=======================================================
+#VGA
+#=======================================================
+#VGA Output
+set_location_assignment PIN_AK29  -to      ;#VGA_R[0] 
+set_location_assignment PIN_AK28  -to      ;#VGA_R[1] 
+set_location_assignment PIN_AK27  -to      ;#VGA_R[2] 
+set_location_assignment PIN_AJ27  -to      ;#VGA_R[3] 
+set_location_assignment PIN_AH27  -to      ;#VGA_R[4] 
+set_location_assignment PIN_AF26  -to      ;#VGA_R[5] 
+set_location_assignment PIN_AG26  -to      ;#VGA_R[6] 
+set_location_assignment PIN_AJ26  -to      ;#VGA_R[7] 
+set_location_assignment PIN_AK26  -to      ;#VGA_G[0] 
+set_location_assignment PIN_AJ25  -to      ;#VGA_G[1] 
+set_location_assignment PIN_AH25  -to      ;#VGA_G[2] 
+set_location_assignment PIN_AK24  -to      ;#VGA_G[3] 
+set_location_assignment PIN_AJ24  -to      ;#VGA_G[4] 
+set_location_assignment PIN_AH24  -to      ;#VGA_G[5] 
+set_location_assignment PIN_AK23  -to      ;#VGA_G[6] 
+set_location_assignment PIN_AH23  -to      ;#VGA_G[7] 
+set_location_assignment PIN_AJ21  -to      ;#VGA_B[0] 
+set_location_assignment PIN_AJ20  -to      ;#VGA_B[1] 
+set_location_assignment PIN_AH20  -to      ;#VGA_B[2] 
+set_location_assignment PIN_AJ19  -to      ;#VGA_B[3] 
+set_location_assignment PIN_AH19  -to      ;#VGA_B[4] 
+set_location_assignment PIN_AJ17  -to      ;#VGA_B[5] 
+set_location_assignment PIN_AJ16  -to      ;#VGA_B[6] 
+set_location_assignment PIN_AK16  -to      ;#VGA_B[7] 
+set_location_assignment PIN_AK21  -to      ;#VGA_CLK 
+set_location_assignment PIN_AK22  -to      ;#VGA_BLANK_N
+set_location_assignment PIN_AK19  -to      ;#VGA_HS 
+set_location_assignment PIN_AK18  -to      ;#VGA_VS 
+set_location_assignment PIN_AJ22  -to      ;#VGA_SYNC_N 
 
 # ======================================================
 # Save/export
