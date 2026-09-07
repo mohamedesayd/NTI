@@ -1,5 +1,6 @@
 module sm(
     input clk, rst_n, loser, boss, start, hold,
+    input [9:0] sw,
     output reg [2:0] state,
     output reg [2:0] speed,
     output reg active
@@ -30,25 +31,25 @@ module sm(
                     next_state <= idle;
             end
             level1:begin
-                if (~upgraded && boss && hold)
+                if (boss)
                     next_state <= level2;
-                else if (loser && hold)
+                else if (loser)
                     next_state <= lose;
                 else
                     next_state <= level1;
             end
             level2:begin
-                if (~upgraded && boss && hold)
+                if (boss && (~upgraded))
                     next_state <= level3;
-                else if (loser && hold)
+                else if (loser)
                     next_state <= lose;
                 else
                     next_state <= level2;
             end
             level3:begin
-                if (~upgraded && boss && hold)
+                if (boss && (~upgraded))
                     next_state <= win;
-                else if (loser && hold)
+                else if (loser)
                     next_state <= lose;
                 else
                     next_state <= level3; 
@@ -83,11 +84,17 @@ module sm(
 
         state = current_state;
 
-        if (((current_state == level1)||
-             (current_state == level2)||
-             (current_state == level3))&& boss)
-            upgraded = 1;
-        else 
+        if (~rst_n) begin 
             upgraded = 0;
+        end else begin 
+            if ((sw == 0)|| hold)
+                upgraded = 0;
+            else if (((current_state == level1)||
+                 (current_state == level2)||
+                 (current_state == level3))&& boss)
+                upgraded = 1;
+            else 
+                upgraded = 0;
+        end
     end
 endmodule

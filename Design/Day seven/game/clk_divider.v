@@ -7,8 +7,10 @@ module clk_divider #(
 );
     reg [31:0] counter;
     always @(posedge clk_ref, negedge rst_n) begin
-        if (~rst_n)
+        if (~rst_n) begin 
             counter <=0;
+            clk <= 0;
+        end
         else if (counter == ((CLK_REF_FREQ*speed)/2)) begin
             counter <=0;
             clk <= ~clk;

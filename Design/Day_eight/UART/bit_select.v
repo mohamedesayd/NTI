@@ -27,7 +27,7 @@ module bit_select(
                     next_state = idle;
             end
             serialize: begin
-                if (bit_select <= 9)
+                if (bit_select < 9)
                     next_state = serialize;
                 else
                     next_state = done_s;

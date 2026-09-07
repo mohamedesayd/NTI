@@ -2,6 +2,6 @@ module comparator(
     input [9:0] leds, sw,
     output loser, boss
 );
-    assign boss = (leds == sw);
-    assign loser = (leds != sw);
+    assign boss = (sw == 10'b0000000000)? 0:  (leds == sw);
+    assign loser = (sw == 10'b0000000000)? 0 :(leds != sw);
 endmodule
