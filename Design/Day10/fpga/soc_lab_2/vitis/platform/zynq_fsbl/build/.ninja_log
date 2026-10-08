@@ -1,0 +1,16 @@
+# ninja log v5
+6	68	0	CMakeFiles/print_build_info	b57714247408eb17
+6	68	0	/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/vitis/platform/zynq_fsbl/build/CMakeFiles/print_build_info	b57714247408eb17
+68	707	1788846731970303500	CMakeFiles/fsbl.elf.dir/fsbl_handoff.S.obj	99877734b6edfb48
+70	726	1788846731999251500	CMakeFiles/fsbl.elf.dir/rsa.c.obj	e89c4cedc19a9081
+69	798	1788846732073153900	CMakeFiles/fsbl.elf.dir/md5.c.obj	68b04d0e3070bd42
+70	920	1788846732194401700	CMakeFiles/fsbl.elf.dir/ps7_init.c.obj	1349ba19bafc2799
+69	936	1788846732195185700	CMakeFiles/fsbl.elf.dir/nand.c.obj	c776bc9c03b4a37c
+68	947	1788846732222574700	CMakeFiles/fsbl.elf.dir/fsbl_hooks.c.obj	d92e7ddd3a724810
+69	948	1788846732222614600	CMakeFiles/fsbl.elf.dir/nor.c.obj	c1b9bc889df10c1f
+70	950	1788846732227251100	CMakeFiles/fsbl.elf.dir/sd.c.obj	64b2f6c97956b509
+69	952	1788846732230332400	CMakeFiles/fsbl.elf.dir/pcap.c.obj	400a14e0807d4ad6
+69	953	1788846732232882400	CMakeFiles/fsbl.elf.dir/qspi.c.obj	1d65b31330aa08bd
+69	960	1788846732238465400	CMakeFiles/fsbl.elf.dir/image_mover.c.obj	907a9d68c035a58c
+69	961	1788846732241845900	CMakeFiles/fsbl.elf.dir/main.c.obj	906008302fc309c2
+961	1260	1788846732455914400	fsbl.elf	92a7eeed3fa89b05

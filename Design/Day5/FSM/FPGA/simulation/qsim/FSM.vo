@@ -1,0 +1,268 @@
+// Copyright (C) 2025  Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Altera and sold by Altera or its authorized distributors.  Please
+// refer to the Altera Software License Subscription Agreements 
+// on the Quartus Prime software download page.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition"
+
+// DATE "08/25/2026 10:37:17"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for Questa Altera FPGA (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module FSM (
+	reset,
+	clock,
+	a,
+	b,
+	y0,
+	y1);
+input 	reset;
+input 	clock;
+input 	a;
+input 	b;
+output 	y0;
+output 	y1;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \y0~output_o ;
+wire \y1~output_o ;
+wire \b~input_o ;
+wire \a~input_o ;
+wire \clock~input_o ;
+wire \fstate.S1~0_combout ;
+wire \reset~input_o ;
+wire \fstate.S1~q ;
+wire \Selector0~0_combout ;
+wire \fstate.S0~q ;
+wire \y0~0_combout ;
+wire \fstate.S2~q ;
+
+
+cyclonev_io_obuf \y0~output (
+	.i(\y0~0_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\y0~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \y0~output .bus_hold = "false";
+defparam \y0~output .open_drain_output = "false";
+defparam \y0~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \y1~output (
+	.i(!\fstate.S2~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\y1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \y1~output .bus_hold = "false";
+defparam \y1~output .open_drain_output = "false";
+defparam \y1~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \b~input (
+	.i(b),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\b~input_o ));
+// synopsys translate_off
+defparam \b~input .bus_hold = "false";
+defparam \b~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \a~input (
+	.i(a),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\a~input_o ));
+// synopsys translate_off
+defparam \a~input .bus_hold = "false";
+defparam \a~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \clock~input (
+	.i(clock),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clock~input_o ));
+// synopsys translate_off
+defparam \clock~input .bus_hold = "false";
+defparam \clock~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \fstate.S1~0 (
+// Equation(s):
+// \fstate.S1~0_combout  = (!\a~input_o  & (((\fstate.S1~q )))) # (\a~input_o  & (!\b~input_o  & (!\fstate.S0~q )))
+
+	.dataa(!\b~input_o ),
+	.datab(!\a~input_o ),
+	.datac(!\fstate.S0~q ),
+	.datad(!\fstate.S1~q ),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\fstate.S1~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \fstate.S1~0 .extended_lut = "off";
+defparam \fstate.S1~0 .lut_mask = 64'h20EC20EC20EC20EC;
+defparam \fstate.S1~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_io_ibuf \reset~input (
+	.i(reset),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\reset~input_o ));
+// synopsys translate_off
+defparam \reset~input .bus_hold = "false";
+defparam \reset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \fstate.S1 (
+	.clk(\clock~input_o ),
+	.d(\fstate.S1~0_combout ),
+	.asdata(vcc),
+	.clrn(\reset~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\fstate.S1~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \fstate.S1 .is_wysiwyg = "true";
+defparam \fstate.S1 .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \Selector0~0 (
+// Equation(s):
+// \Selector0~0_combout  = (!\a~input_o  & ((\fstate.S1~q ))) # (\a~input_o  & (!\fstate.S0~q ))
+
+	.dataa(!\a~input_o ),
+	.datab(!\fstate.S0~q ),
+	.datac(!\fstate.S1~q ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Selector0~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Selector0~0 .extended_lut = "off";
+defparam \Selector0~0 .lut_mask = 64'h4E4E4E4E4E4E4E4E;
+defparam \Selector0~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \fstate.S0 (
+	.clk(\clock~input_o ),
+	.d(\Selector0~0_combout ),
+	.asdata(vcc),
+	.clrn(\reset~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\fstate.S0~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \fstate.S0 .is_wysiwyg = "true";
+defparam \fstate.S0 .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \y0~0 (
+// Equation(s):
+// \y0~0_combout  = (\b~input_o  & (\a~input_o  & !\fstate.S0~q ))
+
+	.dataa(!\b~input_o ),
+	.datab(!\a~input_o ),
+	.datac(!\fstate.S0~q ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\y0~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \y0~0 .extended_lut = "off";
+defparam \y0~0 .lut_mask = 64'h1010101010101010;
+defparam \y0~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \fstate.S2 (
+	.clk(\clock~input_o ),
+	.d(\y0~0_combout ),
+	.asdata(vcc),
+	.clrn(\reset~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\fstate.S2~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \fstate.S2 .is_wysiwyg = "true";
+defparam \fstate.S2 .power_up = "low";
+// synopsys translate_on
+
+assign y0 = \y0~output_o ;
+
+assign y1 = \y1~output_o ;
+
+endmodule

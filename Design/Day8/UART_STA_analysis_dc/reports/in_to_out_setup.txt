@@ -1,0 +1,16 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : UART_Tx
+Version: O-2018.06-SP1
+Date   : Wed Sep  2 13:03:36 2026
+****************************************
+
+Operating Conditions: tt0p78v25c   Library: saed32rvt_tt0p78v25c
+Wire Load Model Mode: enclosed
+No paths.
+
+1

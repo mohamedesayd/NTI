@@ -1,0 +1,4 @@
+/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/vitis/platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/vitis/platform/zynq_fsbl/build/CMakeFiles/print_build_info.dir
+/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/vitis/platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/vitis/platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

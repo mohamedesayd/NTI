@@ -1,0 +1,4 @@
+domain_path: /home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/vitis/platform/zynq_fsbl/zynq_fsbl_bsp
+app_src_dir: /home/eldo/work/vivado/2025.2.1/Vitis/data/embeddedsw/lib/sw_apps/zynq_fsbl
+template: zynq_fsbl
+lang: c

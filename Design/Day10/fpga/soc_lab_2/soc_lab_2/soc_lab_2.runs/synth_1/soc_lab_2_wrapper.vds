@@ -1,0 +1,265 @@
+#-----------------------------------------------------------
+# Vivado v2025.2.1 (64-bit)
+# SW Build 6403652 on Thu Mar 19 13:47:00 MDT 2026
+# IP Build 6403511 on Thu Mar 19 12:41:45 MDT 2026
+# SharedData Build 6403650 on Thu Mar 19 14:02:13 MDT 2026
+# Start of session at: Tue Sep  8 08:46:35 2026
+# Process ID         : 42053
+# Current directory  : /home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.runs/synth_1
+# Command line       : vivado -log soc_lab_2_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_lab_2_wrapper.tcl
+# Log file           : /home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.runs/synth_1/soc_lab_2_wrapper.vds
+# Journal file       : /home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.runs/synth_1/vivado.jou
+# Running On         : eldo
+# Platform           : NobaraLinux
+# Operating System   : Nobara Linux 44 (GNOME Edition)
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency      : 4034.627 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16522 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 16522 MB
+# Available Virtual  : 8479 MB
+#-----------------------------------------------------------
+source soc_lab_2_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/eldo/work/vivado/2025.2.1/data/ip'.
+Command: synth_design -top soc_lab_2_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 42327
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2493.289 ; gain = 481.156 ; free physical = 3584 ; free virtual = 6968
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_lab_2_wrapper' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/hdl/soc_lab_2_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/home/eldo/work/vivado/2025.2.1/Vivado/scripts/rt/data/unisim_comp.v:87494]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/home/eldo/work/vivado/2025.2.1/Vivado/scripts/rt/data/unisim_comp.v:87494]
+INFO: [Synth 8-6157] synthesizing module 'soc_lab_2' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:13]
+INFO: [Synth 8-6157] synthesizing module 'soc_lab_2_processing_system7_0_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.runs/synth_1/.Xil/Vivado-42053-eldo/realtime/soc_lab_2_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'soc_lab_2_processing_system7_0_0' (0#1) [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.runs/synth_1/.Xil/Vivado-42053-eldo/realtime/soc_lab_2_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARVALID' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWVALID' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_BREADY' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_RREADY' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WLAST' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WVALID' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARID' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWID' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WID' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARBURST' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARLOCK' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARSIZE' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWBURST' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWLOCK' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWSIZE' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARPROT' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWPROT' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARADDR' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWADDR' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WDATA' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARCACHE' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARLEN' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARQOS' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWCACHE' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWLEN' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_AWQOS' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_WSTRB' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7071] port 'FCLK_RESET0_N' of module 'soc_lab_2_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'soc_lab_2_processing_system7_0_0' has 68 connections declared, but only 38 given [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'soc_lab_2' (0#1) [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/synth/soc_lab_2.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'soc_lab_2_wrapper' (0#1) [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/hdl/soc_lab_2_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2579.227 ; gain = 567.094 ; free physical = 3465 ; free virtual = 6858
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2591.102 ; gain = 578.969 ; free physical = 3456 ; free virtual = 6850
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2591.102 ; gain = 578.969 ; free physical = 3456 ; free virtual = 6850
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2594.070 ; gain = 0.000 ; free physical = 3452 ; free virtual = 6845
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/ip/soc_lab_2_processing_system7_0_0/soc_lab_2_processing_system7_0_0/soc_lab_2_processing_system7_0_0_in_context.xdc] for cell 'soc_lab_2_i/processing_system7_0'
+Finished Parsing XDC File [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.gen/sources_1/bd/soc_lab_2/ip/soc_lab_2_processing_system7_0_0/soc_lab_2_processing_system7_0_0/soc_lab_2_processing_system7_0_0_in_context.xdc] for cell 'soc_lab_2_i/processing_system7_0'
+Parsing XDC File [/home/eldo/work/NTI/Design/Day_ten/fpga/PYNQ-Z2 v1.0.xdc]
+Finished Parsing XDC File [/home/eldo/work/NTI/Design/Day_ten/fpga/PYNQ-Z2 v1.0.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/eldo/work/NTI/Design/Day_ten/fpga/PYNQ-Z2 v1.0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_lab_2_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_lab_2_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2662.902 ; gain = 0.000 ; free physical = 3403 ; free virtual = 6848
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2662.938 ; gain = 0.000 ; free physical = 3402 ; free virtual = 6848
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2662.938 ; gain = 650.805 ; free physical = 3468 ; free virtual = 7016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2670.906 ; gain = 658.773 ; free physical = 3468 ; free virtual = 7016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2670.906 ; gain = 658.773 ; free physical = 3465 ; free virtual = 7017
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2670.906 ; gain = 658.773 ; free physical = 3452 ; free virtual = 7017
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2670.906 ; gain = 658.773 ; free physical = 3460 ; free virtual = 7011
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2751.906 ; gain = 739.773 ; free physical = 3344 ; free virtual = 6910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2752.906 ; gain = 740.773 ; free physical = 3344 ; free virtual = 6910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2761.922 ; gain = 749.789 ; free physical = 3338 ; free virtual = 6904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2948.734 ; gain = 936.602 ; free physical = 3224 ; free virtual = 6730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2948.734 ; gain = 936.602 ; free physical = 3224 ; free virtual = 6730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2948.734 ; gain = 936.602 ; free physical = 3224 ; free virtual = 6730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2948.734 ; gain = 936.602 ; free physical = 3224 ; free virtual = 6730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2948.734 ; gain = 936.602 ; free physical = 3224 ; free virtual = 6730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2948.734 ; gain = 936.602 ; free physical = 3224 ; free virtual = 6730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |soc_lab_2_processing_system7_0_0 |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |soc_lab_2_processing_system7_0 |     1|
+|2     |IOBUF                          |    16|
++------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2948.734 ; gain = 936.602 ; free physical = 3224 ; free virtual = 6730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2948.734 ; gain = 864.766 ; free physical = 3224 ; free virtual = 6730
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2948.742 ; gain = 936.602 ; free physical = 3224 ; free virtual = 6730
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2948.742 ; gain = 0.000 ; free physical = 3224 ; free virtual = 6730
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2948.742 ; gain = 0.000 ; free physical = 3416 ; free virtual = 6913
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+Synth Design complete | Checksum: 6469fbfb
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 2948.770 ; gain = 1135.184 ; free physical = 3415 ; free virtual = 6912
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1871.677; main = 1871.677; forked = 294.036
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4339.191; main = 2948.738; forked = 1668.281
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2972.746 ; gain = 0.000 ; free physical = 3414 ; free virtual = 6912
+INFO: [Common 17-1381] The checkpoint '/home/eldo/work/NTI/Design/Day_ten/fpga/soc_lab_2/soc_lab_2/soc_lab_2.runs/synth_1/soc_lab_2_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file soc_lab_2_wrapper_utilization_synth.rpt -pb soc_lab_2_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  8 08:47:03 2026...

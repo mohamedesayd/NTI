@@ -1,0 +1,122 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : UART_Tx
+Version: O-2018.06-SP1
+Date   : Wed Sep  2 13:03:36 2026
+****************************************
+
+Operating Conditions: tt0p78v25c   Library: saed32rvt_tt0p78v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Bit_select/bit_select_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: tx (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  mux                ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Bit_select/bit_select_reg[2]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  Bit_select/bit_select_reg[2]/Q (DFFARX1_RVT)            0.24       0.24 f
+  Bit_select/bit_select[2] (bit_select)                   0.00       0.24 f
+  Mux/sel[2] (mux)                                        0.00       0.24 f
+  Mux/U13/Y (NOR3X0_RVT)                                  0.16       0.40 r
+  Mux/U9/Y (AO22X1_RVT)                                   0.09       0.49 r
+  Mux/U6/Y (AO221X1_RVT)                                  0.09       0.59 r
+  Mux/U4/Y (AO22X1_RVT)                                   0.08       0.66 r
+  Mux/serial_out (mux)                                    0.00       0.66 r
+  tx (out)                                                0.00       0.67 r
+  data arrival time                                                  0.67
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -2.00      17.50
+  data required time                                                17.50
+  --------------------------------------------------------------------------
+  data required time                                                17.50
+  data arrival time                                                 -0.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                       16.83
+
+
+  Startpoint: Bit_select/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: busy (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  bit_select         ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Bit_select/current_state_reg[0]/CLK (DFFARX1_RVT)       0.00       0.00 r
+  Bit_select/current_state_reg[0]/Q (DFFARX1_RVT)         0.24       0.24 r
+  Bit_select/U18/Y (AND2X1_RVT)                           0.08       0.32 r
+  Bit_select/busy (bit_select)                            0.00       0.32 r
+  busy (out)                                              0.00       0.32 r
+  data arrival time                                                  0.32
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -2.00      17.50
+  data required time                                                17.50
+  --------------------------------------------------------------------------
+  data required time                                                17.50
+  data arrival time                                                 -0.32
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.18
+
+
+  Startpoint: Bit_select/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: done (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  UART_Tx            8000                  saed32rvt_tt0p78v25c
+  bit_select         ForQA                 saed32rvt_tt0p78v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Bit_select/current_state_reg[1]/CLK (DFFARX1_RVT)       0.00       0.00 r
+  Bit_select/current_state_reg[1]/Q (DFFARX1_RVT)         0.24       0.24 r
+  Bit_select/U21/Y (AND2X1_RVT)                           0.07       0.31 r
+  Bit_select/done (bit_select)                            0.00       0.31 r
+  done (out)                                              0.00       0.31 r
+  data arrival time                                                  0.31
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -2.00      17.50
+  data required time                                                17.50
+  --------------------------------------------------------------------------
+  data required time                                                17.50
+  data arrival time                                                 -0.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                       17.19
+
+
+1
