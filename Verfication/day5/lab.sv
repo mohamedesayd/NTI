@@ -49,3 +49,49 @@ module rand_lab_tb;
         end 
     end 
 endmodule
+
+class rand_lab2;
+    // rand bit [7:0] arr [];
+
+    // constraint arr_constr{arr.size inside {5, 10};
+    //                       unique {arr};}
+
+    // rand bit [3:0] arr [8];
+
+    // constraint arr_constr {arr [0] == 0;
+    //                        foreach (arr[i]) 
+    //                        if (i !=0)
+    //                         arr[i] != arr[i-1];
+    //                         }
+    // rand bit x;
+    // rand bit [7:0] y;
+    // constraint x_y_constr{(x==1)->(y==0);}
+
+    rand bit[31:0] addr;
+    constraint c_addr { $countones(addr) == 10;
+                        foreach (addr[i]) 
+                                if (addr[i] && (i != 31))
+                                    addr[i+1] != 1 ;}
+    
+endclass //rand_lab2
+
+module top2 (
+);
+    int a, b;
+    covergroup group1;
+        cover_1: coverpoint a {bins bin_1 [5] = {[0:4]};}
+        coverpoint b;
+    endgroup
+
+    group1 g1 = new();
+    rand_lab2 r_lab;
+    
+    initial begin
+        r_lab = new();
+        for (int i  =0  ; i < 10 ;i++ ) begin
+        assert(r_lab.randomize());
+        $display("addr: %b", r_lab.addr);
+        end
+        $display("%p", g1.cover_1);
+    end
+endmodule
