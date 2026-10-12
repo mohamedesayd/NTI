@@ -29,6 +29,5 @@ class mem_txn;
         copy.data_out = data_out;
         copy.write_en = write_en;
         copy.read_en  = read_en; 
-        
     endfunction
 endclass //mem_txn
